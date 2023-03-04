@@ -35,7 +35,7 @@ namespace L01_2019MF650.Controllers
         [HttpGet]
         [Route("GetByCliente/{id}")]
 
-        public IActionResult Get(int id)
+        public IActionResult GetCliente(int id)
         {
             List<pedidos> listadoPedido = (from e in _restauranteContexto.pedidos
                                where e.clienteId == id
@@ -52,7 +52,7 @@ namespace L01_2019MF650.Controllers
         [HttpGet]
         [Route("GetByMotorista/{id}")]
 
-        public IActionResult Get(int idM)
+        public IActionResult GetMotoristas(int idM)
         {
             List<pedidos> listadoPedidoM = (from e in _restauranteContexto.pedidos
                                            where e.motoristaId== idM
