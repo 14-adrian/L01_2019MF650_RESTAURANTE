@@ -7,11 +7,11 @@ namespace L01_2019MF650.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class restauranteController : ControllerBase
+    public class pedidosController : ControllerBase
     {
         private readonly restauranteContext _restauranteContexto;
 
-        public restauranteController(restauranteContext restauranteContexto)
+        public pedidosController(restauranteContext restauranteContexto)
         {
             _restauranteContexto = restauranteContexto; ;
         }

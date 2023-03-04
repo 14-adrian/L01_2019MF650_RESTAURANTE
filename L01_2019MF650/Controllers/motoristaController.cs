@@ -5,7 +5,7 @@ namespace L01_2019MF650.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class pedidoController : ControllerBase
+    public class motoristaController : ControllerBase
     {
     }
 }
